@@ -1,0 +1,685 @@
+
+html {
+	font-size: 100%; /* 设置页面基准字体大小 */
+}
+
+body {
+	margin: 0; /* 设置页面边距为0 */
+	padding: 0; /* 设置页面内边距为0 */
+	font-size: 14px; /* 设置页面默认字体大小 */
+}
+
+ul, ol, li, dl, dt, dd, h1, h2, h3, h4, h5, h6, hgroup, p, blockquote, figure,
+form, fieldset, input, legend, pre, abbr {
+	margin: 0; /* 设置元素外边距为0 */
+	padding: 0; /* 设置元素内边距为0 */
+	list-style: none; /* 删除列表元素默认样式 */
+}
+
+input, textarea, select {
+	font-family: inherit; /* 继承父元素字体 */
+	font-size: inherit; /* 继承父元素字体大小 */
+	font-weight: inherit; /* 继承父元素字体粗细 */
+	resize: none; /* 禁止文本域拖动调整大小 */
+	outline: 0; /* 删除元素默认外边框 */
+}
+/*kaishi*/
+/* 字体样式 */
+body, input, select, button, textarea {
+	font-family: "Microsoft Yahei", "微软雅黑", arial, "\5b8b\4f53"; /* 设置页面默认字体 */
+}
+
+/* 页面样式 */
+body {
+	line-height: 1.17; /* 设置页面文本行高 */
+	font-size:13px; /* 设置页面默认字体大小 */
+}
+
+/* 链接样式 */
+a {
+	text-decoration: none; /* 去掉链接下划线 */
+	color: #777a80; /* 设置链接颜色 */
+}
+
+a:focus {
+	outline: none; /* 去掉链接聚焦状态外边框 */
+}
+
+a:hover {
+	text-decoration: none; /* 去掉链接下划线 */
+	color: #fc2626; /* 设置链接鼠标悬停时的颜色 */
+}
+
+/* 页面最小宽度 */
+.page {
+	min-width: 1024px;
+}
+
+/* 头部容器样式 */
+.head-box{
+	position: relative; /* 设置容器为相对定位 */
+	background: #333; /* 设置容器背景颜色 */
+	height: 500px; /* 设置容器高度 */
+}
+
+/* 头部背景图片样式 */
+.head-box .banner-background {
+	position: absolute; /* 设置背景图片为绝对定位 */
+	height: 100%; /* 设置背景图片高度为100% */
+	height: 500px; /* 设置背景图片高度为500px */
+	width: 100%; /* 设置背景图片宽度为100% */
+	background-position: center 0; /* 设置背景图片位置 */
+	background-repeat: no-repeat; /* 设置背景图片不重复 */
+	background-size: cover; /* 设置背景图片大小 */
+	top: 0px; /* 设置背景图片顶部偏移量 */
+}
+
+/* 头部横幅样式 */
+.head-box .min-banner {
+	height: 500px; /* 设置横幅高度 */
+	position: relative; /* 设置横幅为相对定位 */
+	width: 1048px; /* 设置横幅宽度 */
+	margin: 0 auto; /* 设置横幅水平居中 */
+}
+
+/* 搜索框样式 */
+.min-banner .new-searching-unit {
+	display: inline-block; /* 设置搜索框为内联块级元素 */
+	position: relative; /* 设置搜索框为相对定位 */
+}
+
+/* 搜索框容器样式 */
+.min-banner .search-box {
+	text-align: center; /* 设置搜索框居中对齐 */
+	margin-top: 40px; /* 设置搜索框顶部外边距 */
+}
+
+/* 热门关键词样式 */
+.min-banner .hot-words{
+	text-align: center; /* 设置热门关键词居中对齐 */
+	margin-top: 10px; /* 设置热门关键词顶部外边距 */
+}
+/* 热门关键词链接样式 */
+.min-banner .hot-words a {
+	color: #fff; /* 设置链接颜色为白色 */
+	padding-bottom: 5px; /* 设置链接底部内边距 */
+	font-size: 14px; /* 设置链接字体大小 */
+}
+
+.min-banner .hot-words a:hover {
+	text-decoration:underline; /* 设置链接鼠标悬停时的下划线 */
+	color: #fc2626; /* 设置链接鼠标悬停时的颜色 */
+}
+
+/* 搜索框输入框样式 */
+.new-searching-unit input {
+	margin: 0 auto; /* 设置输入框水平居中 */
+	padding: 0 10px; /* 设置输入框内边距 */
+	width: 536px; /* 设置输入框宽度 */
+	height: 34px; /* 设置输入框高度 */
+	border: 1px solid rgba(255,255,255,.8); /* 设置输入框边框样式 */
+	border-radius: 2px; /* 设置输入框边框圆角 */
+	color: #fff; /* 设置输入框文字颜色 */
+	background: rgba(0,0,0,.15); /* 设置输入框背景颜色 */
+}
+
+/* 搜索框搜索按钮样式 */
+.new-searching-unit .go {
+	position: absolute; /* 设置搜索按钮为绝对定位 */
+	display: block; /* 设置搜索按钮为块级元素 */
+	top: 0; /* 设置搜索按钮顶部偏移量 */
+	right: 0; /* 设置搜索按钮右侧偏移量 */
+	width: 40px; /* 设置搜索按钮宽度 */
+	height: 36px; /* 设置搜索按钮高度 */
+	background: url(../images/icon_search.svg) 9px 7px no-repeat; /* 设置搜索按钮背景图片 */
+	cursor: pointer; /* 设置搜索按钮鼠标样式 */
+}
+
+/* 横幅中间部分容器样式 */
+.minb_cen{
+	position: absolute; /* 设置容器为绝对定位 */
+	top: 110px; /* 设置容器顶部偏移量 */
+	width: 100%; /* 设置容器宽度 */
+}
+
+/* 头部导航栏容器样式 */
+.header_nav{
+	width: 100%; /* 设置容器宽度 */
+	position: fixed; /* 设置容器为固定定位 */
+	top: 0; /* 设置容器顶部偏移量 */
+	z-index: 20; /* 设置容器层级 */
+}
+
+/* 页面主体容器样式 */
+.wrapper{
+	width:1248px; /* 设置容器宽度 */
+	margin: 0 auto; /* 设置容器水平居中 */
+}
+
+/* 菜单栏容器样式 */
+.menu-bar {
+	height: 48px; /* 设置菜单栏高度 */
+	text-align: center; /* 设置菜单栏居中对齐 */
+}
+/* 左侧部分容器样式 */
+.left-part{
+	float: left; /* 设置容器浮动为左浮动 */
+	margin-top: 10px; /* 设置容器顶部外边距 */
+	position: relative; /* 设置容器为相对定位 */
+}
+
+/* 头部左侧链接样式 */
+.left-part a{
+	line-height: 30px; /* 设置链接行高 */
+	margin-right:20px; /* 设置链接右侧外边距 */
+	float: left; /* 设置链接浮动为左浮动 */
+	color: #fff; /* 设置链接颜色为白色 */
+}
+
+/* 头部花瓣网logo样式 */
+#huaban{
+	background: url(../images/logo_wt.svg) 0 0 no-repeat; /* 设置logo背景图片 */
+	float: left; /* 设置logo浮动为左浮动 */
+	margin-right: 20px; /* 设置logo右侧外边距 */
+	width: 80px; /* 设置logo宽度 */
+	height: 28px; /* 设置logo高度 */
+}
+
+/* 头部菜单导航样式 */
+.menu-nav{
+	display: block; /* 设置导航为块级元素 */
+	background: url(../images/menu_sprite.svg) -50px -558px no-repeat; /* 设置导航背景图片 */
+	margin-right: 20px; /* 设置导航右侧外边距 */
+	width: 24px; /* 设置导航宽度 */
+	float: left; /* 设置导航浮动为左浮动 */
+	height: 28px; /* 设置导航高度 */
+	cursor: pointer; /* 设置导航鼠标样式 */
+	position: relative; /* 设置导航为相对定位 */
+}
+
+/* 头部导航菜单链接样式 */
+.header-main-menu a{
+	color:#444444; /* 设置链接颜色为灰色 */
+}
+
+.header-main-menu a:hover{
+	color:#FF6767; /* 设置链接鼠标悬停时的颜色 */
+}
+
+/* 头部导航菜单样式 */
+.header-main-menu{
+	background: #fff; /* 设置菜单背景颜色 */
+	width: 230px; /* 设置菜单宽度 */
+	padding: 20px; /* 设置菜单内边距 */
+	position: absolute; /* 设置菜单为绝对定位 */
+	zoom: 1; /* 解决IE6/7浮动问题 */
+	top: 38px; /* 设置菜单顶部偏移量 */
+	left: 76px; /* 设置菜单左侧偏移量 */
+	display: none; /* 设置菜单默认隐藏 */
+}
+
+/* 头部顶部模块样式 */
+.top-module{
+	height: 35px; /* 设置顶部模块高度 */
+	border-bottom: 1px solid #ccc; /* 设置顶部模块下边框样式 */
+}
+/* 头部顶部模块链接样式 */
+.top-module a{
+	font-weight: 700; /* 设置链接字体粗细 */
+	font-size: 16px; /* 设置链接字体大小 */
+	padding: 0 0px 0 23px; /* 设置链接内边距 */
+}
+
+/* 头部菜单栏第一列容器样式 */
+.header-main-menu .col-1{
+	width: 85px; /* 设置容器宽度 */
+	float: left; /* 设置容器浮动为左浮动 */
+	margin-left: 22px; /* 设置容器左侧外边距 */
+}
+
+/* 头部菜单栏第二列容器样式 */
+.header-main-menu .col-2{
+	width: 100px; /* 设置容器宽度 */
+	float: right; /* 设置容器浮动为右浮动 */
+}
+
+/* 菜单栏上箭头样式 */
+.up-arrow {
+	width: 18px; /* 设置箭头宽度 */
+	height: 10px; /* 设置箭头高度 */
+	position: absolute; /* 设置箭头为绝对定位 */
+	left: 122px; /* 设置箭头左侧偏移量 */
+	top: -9px; /* 设置箭头顶部偏移量 */
+	background: url(../images/menu_arrow.png) 0 0 no-repeat; /* 设置箭头背景图片 */
+}
+
+/* 头部菜单栏子菜单链接显示样式 */
+.ha_bl{display: block}
+
+/* 按钮样式 */
+.btn {
+	border-radius: 2px; /* 设置按钮圆角 */
+}
+
+/* 登录导航容器样式 */
+.login-nav{
+	float: right; /* 设置容器浮动为右浮动 */
+	width: 154px; /* 设置容器宽度 */
+	line-height: 48px; /* 设置容器行高 */
+}
+
+/* 登录导航链接样式 */
+.login-nav a{
+	padding: 7px 13px; /* 设置链接内边距 */
+	color: #ffffff; /* 设置链接颜色为白色 */
+	margin-left: 10px; /* 设置链接左侧外边距 */
+}
+
+/* 注册按钮样式 */
+.login-nav .register{
+	background: rgba(201,0,0,.6); /* 设置按钮背景颜色 */
+	width: 52px; /* 设置按钮宽度 */
+	height: 34px; /* 设置按钮高度 */
+}
+/* 登录导航登录按钮样式 */
+.login-nav .h_login{
+	border: 1px solid #fff; /* 设置按钮边框样式 */
+	padding: 5px 11px; /* 设置按钮内边距 */
+}
+
+.login-nav .h_login:hover{
+	background: #fff; /* 设置按钮鼠标悬停时的背景颜色 */
+	color: #444; /* 设置按钮鼠标悬停时的文字颜色 */
+}
+
+/* 分类容器样式 */
+.fenlei_con{
+	width: 1248px; /* 设置容器宽度 */
+	margin: 0 auto; /* 设置容器水平居中 */
+}
+
+/* 推荐模块容器样式 */
+.recommend-line{
+	width: 100%; /* 设置容器宽度 */
+	height: 60px; /* 设置容器高度 */
+	position: relative; /* 设置容器为相对定位 */
+}
+
+/* 推荐模块分割线样式 */
+.line{
+	height: 1px; /* 设置分割线高度 */
+	width: 100%; /* 设置分割线宽度 */
+	border-bottom: 1px solid #E6E6E6; /* 设置分割线下边框样式 */
+	position: absolute; /* 设置分割线为绝对定位 */
+	top:32px; /* 设置分割线顶部偏移量 */
+}
+
+/* 推荐模块更多分割线样式 */
+.line_more{
+	height: 1px; /* 设置分割线高度 */
+	width: 100%; /* 设置分割线宽度 */
+	border-bottom: 1px solid #fc2626; /* 设置分割线下边框样式 */
+	position: absolute; /* 设置分割线为绝对定位 */
+	top:30px; /* 设置分割线顶部偏移量 */
+}
+
+/* 推荐模块文字容器样式 */
+.fl_com{
+	position: absolute; /* 设置容器为绝对定位 */
+	left:50%; /* 设置容器左侧偏移量 */
+	margin-left: -100px; /* 设置容器左侧负外边距 */
+	width: 200px; /* 设置容器宽度 */
+	text-align: center; /* 设置容器文字居中对齐 */
+	top: 23px; /* 设置容器顶部偏移量 */
+	background: #fff; /* 设置容器背景颜色 */
+	color: #999; /* 设置容器文字颜色 */
+}
+
+/* 推荐模块更多按钮容器样式 */
+.fl_com2{
+	width: 100px; /* 设置容器宽度 */
+	margin-left: -50px; /* 设置容器左侧负外边距 */
+}
+
+/* 分类列表容器样式 */
+.fllist{
+	width: 1300px; /* 设置容器宽度 */
+}
+/* 分类列表项容器样式 */
+.fllist_a{
+	position:relative; /* 设置容器为相对定位 */
+	display: inline-block; /* 设置容器为行内块级元素 */
+	margin-right: 12px; /* 设置容器右侧外边距 */
+}
+
+/* 分类列表项标题样式 */
+.fllist .fllist_title{
+	position: absolute; /* 设置标题为绝对定位 */
+	font-size: 20px; /* 设置标题字体大小 */
+	left: 38px; /* 设置标题左侧偏移量 */
+	top: 23px; /* 设置标题顶部偏移量 */
+	-webkit-font-smoothing: antialiased; /* 设置字体抗锯齿 */
+	-moz-osx-font-smoothing: grayscale; /* 设置字体抗锯齿 */
+	text-shadow: 0 1px 0 rgba(0,0,0,.3); /* 设置文字阴影 */
+	color:#fff; /* 设置文字颜色为白色 */
+}
+
+.fllist .fllist_title:hover{
+	color:rgb(239, 239, 239); /* 设置标题鼠标悬停时的颜色 */
+}
+
+/* 分类列表项图片容器样式 */
+.fllist .fllist_img{
+	width:164px; /* 设置图片容器宽度 */
+	height: 70px; /* 设置图片容器高度 */
+	overflow: hidden; /* 设置溢出隐藏 */
+	display: inline-block; /* 设置容器为行内块级元素 */
+	border-radius: 5px; /* 设置容器圆角 */
+	box-shadow: 0 1px 3px rgba(0,0,0,.25); /* 设置容器阴影 */
+}
+
+/* 分类列表项图片样式 */
+.fllist .fllist_img img{
+	-webkit-filter: blur(3px); /* 设置图片模糊 */
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+}
+
+ /* 用户内容列表容器样式 */
+.user_con-list{
+	width:1248px; /* 设置容器宽度 */
+	margin: 0 auto; /* 设置容器水平居中 */
+}
+
+/* 用户内容列表第一项样式 */
+.ucl .ucl_1{
+	height:308px; /* 设置项高度 */
+}
+
+/* 用户内容列表项样式 */
+.ucl{
+	height:308px; /* 设置项高度 */
+	margin-top:4px; /* 设置项顶部外边距 */
+}
+
+/* 用户内容列表左侧容器样式 */
+.user_1{
+	overflow: hidden; /* 设置溢出隐藏 */
+}
+
+/* 用户内容列表中间容器样式 */
+.user_2{
+
+}
+
+/* 用户内容列表右侧容器样式 */
+.user_3{
+
+}
+
+/* 用户内容列表右侧用户信息容器样式 */
+.ucr{
+	float:left; /* 设置容器左浮动 */
+	position: relative; /* 设置容器为相对定位 */
+	width:308px; /* 设置容器宽度 */
+	height: 308px; /* 设置容器高度 */
+	margin-left: 4px; /* 设置容器左侧外边距 */
+	overflow: hidden; /* 设置溢出隐藏 */
+}
+
+/* 用户头像样式 */
+.user_head{
+	display: block; /* 设置头像为块级元素 */
+	z-index: 1; /* 设置头像层级为1 */
+	position: absolute; /* 设置头像为绝对定位 */
+	margin: -63px 0 0 -63px; /* 设置头像外边距 */
+	left: 50%; /* 设置头像左侧偏移量 */
+	top: 50%; /* 设置头像顶部偏移量 */
+	width: 120px; /* 设置头像宽度 */
+	height: 120px; /* 设置头像高度 */
+	border-radius: 50%; /* 设置头像为圆形 */
+	border: 3px solid #fff; /* 设置头像边框样式 */
+	overflow: hidden; /* 设置头像溢出隐藏 */
+}
+
+/* 用户列表右侧用户头像图片样式 */
+.ucr .user_pic{
+	width: 308px; /* 设置图片容器宽度 */
+	height: 308px; /* 设置图片容器高度 */
+	overflow: hidden; /* 设置溢出隐藏 */
+	-webkit-filter: blur(25px); /* 设置图片模糊 */
+	-moz-filter: blur(25px);
+	-o-filter: blur(25px);
+	-ms-filter: blur(25px);
+	filter: blur(25px);
+}
+/* 用户信息容器样式 */
+.user_box{
+
+}
+
+/* 用户信息简介标题样式 */
+.user_box .ub_jj h1{
+	font-size: 35px; /* 设置标题字体大小 */
+	font-style: normal; /* 设置标题字体风格 */
+	color: #D8D8D8; /* 设置标题文字颜色 */
+	font-weight: 100; /* 设置标题字体粗细 */
+}
+
+/* 用户信息简介副标题样式 */
+.user_box .ub_jj h2{
+	font-size: 20px; /* 设置副标题字体大小 */
+	font-style: normal; /* 设置副标题字体风格 */
+	margin: 5px 0; /* 设置副标题上下外边距 */
+	font-weight: 100; /* 设置副标题字体粗细 */
+}
+
+/* 用户信息简介文字样式 */
+.user_box .ub_jj p{
+	color: #999; /* 设置文字颜色为灰色 */
+	font-size: 12px; /* 设置文字字体大小 */
+}
+
+/* 用户信息简介容器样式 */
+.user_box .ub_jj{
+	height: 112px; /* 设置容器高度 */
+	padding: 20px; /* 设置容器内边距 */
+	position: relative; /* 设置容器为相对定位 */
+	background: #fafafa; /* 设置容器背景颜色 */
+}
+
+/* 用户信息简介容器鼠标悬停样式 */
+.user_box .ub_jj:hover{
+	background: #F1F1F1; /* 设置容器鼠标悬停时的背景颜色 */
+}
+
+/* 用户信息简介左侧容器样式 */
+.user_box .ub_jj1{
+
+}
+
+/* 用户信息简介右侧容器样式 */
+.user_box .ub_jj2{
+	margin-top: 4px; /* 设置容器顶部外边距 */
+	text-align: right; /* 设置容器文字右对齐 */
+}
+
+/* 用户信息简介左侧容器文字样式 */
+.user_box .ub_jj1 span{
+	padding-right:5px; /* 设置文字右侧内边距 */
+}
+
+/* 用户信息简介右侧容器文字样式 */
+.user_box .ub_jj2 span{
+	padding-left:5px; /* 设置文字左侧内边距 */
+}
+
+/* 用户信息简介三角形样式 */
+.user_box .sanj{
+	position: absolute; /* 设置三角形为绝对定位 */
+	width: 14px; /* 设置三角形宽度 */
+	height: 28px; /* 设置三角形高度 */
+	background: url(../images/info_tra.svg) no-repeat; /* 设置三角形背景图 */
+	top: 60px; /* 设置三角形顶部偏移量 */
+	left: -14px; /* 设置三角形左侧偏移量 */
+}
+
+/* 用户信息简介右侧三角形样式 */
+.user_box .sanj2{
+	position: absolute; /* 设置三角形为绝对定位 */
+	z-index: 1; /* 设置三角形层级为1 */
+	width: 14px; /* 设置三角形宽度 */
+	height: 28px; /* 设置三角形高度 */
+	background: url(../images/info_tra.svg) no-repeat; /* 设置三角形背景图 */
+	background-position: 0 -51px; /* 设置三角形背景图位置 */
+	top: 60px; /* 设置三角形顶部偏移量 */
+	right: -14px; /* 设置三角形右侧偏移量 */
+}
+/* 用户内容列表第一项容器样式 */
+.user_con-1{
+	position:absolute; /* 设置容器为绝对定位 */
+	bottom:30px; /* 设置容器底部偏移量 */
+	left:0px; /* 设置容器左侧偏移量 */
+	padding:15px; /* 设置容器内边距 */
+	background:rgba(0,0,0,.4); /* 设置容器背景颜色 */
+}
+
+/* 用户内容列表第一项链接文字样式 */
+.user_con-1 .user_2 a{
+	color:#fff; /* 设置文字颜色为白色 */
+	font-size: 18px; /* 设置文字字体大小 */
+	font-weight:100; /* 设置文字字体粗细 */
+}
+
+/* 用户内容列表第一项链接文字鼠标悬停样式 */
+.user_con-1 .user_2 a:hover{
+	color:#FF6767; /* 设置文字鼠标悬停时的颜色 */
+}
+
+/* 用户内容列表第一项文字样式 */
+.user_con-1 p span{
+	color:#bbb; /* 设置文字颜色为灰色 */
+	font-size: 12px; /* 设置文字字体大小 */
+}
+
+/* 用户内容列表第二项容器样式 */
+.user_con-2{
+	z-index:3; /* 设置容器层级为3 */
+	position:absolute; /* 设置容器为绝对定位 */
+	width:308px; /* 设置容器宽度 */
+	text-align:center; /* 设置容器文字居中对齐 */
+	bottom:30px; /* 设置容器底部偏移量 */
+	left:0px; /* 设置容器左侧偏移量 */
+}
+
+/* 用户内容列表第二项链接文字样式 */
+.user_con-2 .user_hrader a{
+	color:#444; /* 设置文字颜色为深灰色 */
+	font-weight:100; /* 设置文字字体粗细 */
+}
+
+/* 用户内容列表第二项链接文字鼠标悬停样式 */
+.user_con-2 .user_hrader a:hover{
+	color:#FF6767; /* 设置文字鼠标悬停时的颜色 */
+}
+
+/* 用户内容列表第二项文字样式 */
+.user_con-2 p span{
+	color:#999; /* 设置文字颜色为浅灰色 */
+	font-size:12px; /* 设置文字字体大小 */
+}
+
+/* 首页更多按钮容器样式 */
+.index_more{
+	text-align:center; /* 设置容器文字居中对齐 */
+	position:relative; /* 设置容器为相对定位 */
+	margin:30px 0; /* 设置容器上下外边距 */
+	height: 50px; /* 设置容器高度 */
+}
+/* 首页更多按钮样式 */
+.index_more a{
+	border:1px solid #fc2626; /* 设置按钮边框样式 */
+	padding:10px 0; /* 设置按钮内边距 */
+	width:350px; /* 设置按钮宽度 */
+	position:absolute; /* 设置按钮为绝对定位 */
+	border-radius:50px; /* 设置按钮为圆形 */
+	color:#fc2626; /* 设置文字颜色为红色 */
+	background:#fff; /* 设置按钮背景颜色为白色 */
+	z-index:5; /* 设置按钮层级为5 */
+	top:11px; /* 设置按钮顶部偏移量 */
+	left:50%; /* 设置按钮左侧偏移量为50% */
+	margin-left:-175px; /* 设置按钮左侧外边距为宽度的一半的相反数 */
+}
+
+/* 首页更多按钮鼠标悬停样式 */
+.index_more a:hover{
+	background:#fc2626; /* 设置按钮鼠标悬停时的背景颜色 */
+	color:#fff; /* 设置文字颜色为白色 */
+}
+
+/* 首页底部容器样式 */
+.index_bottom{
+	background:#FEFEFE; /* 设置容器背景颜色为白色 */
+	padding:20px 0; /* 设置容器内边距 */
+	overflow:hidden; /* 设置容器溢出隐藏 */
+	zoom:1; /* 设置容器缩放比例为1 */
+}
+
+/* 底部分类容器样式 */
+.bottom_min-fenlei{
+	width:1248px; /* 设置容器宽度 */
+	margin:0 auto; /* 设置容器水平居中 */
+	overflow:hidden; /* 设置容器溢出隐藏 */
+	zoom:1; /* 设置容器缩放比例为1 */
+}
+
+/* 底部分类列表样式 */
+.bottom_min-fenlei ul{
+	width:20%; /* 设置列表宽度为容器的1/5 */
+	float:left; /* 设置列表左浮动 */
+}
+
+/* 底部分类列表项样式 */
+.bottom_min-fenlei li{
+	padding:5px 0; /* 设置列表项上下内边距 */
+}
+
+/* 底部版权容器样式 */
+.banquan1{
+	width:20%; /* 设置容器宽度为容器的1/5 */
+	float: left; /* 设置容器左浮动 */
+}
+
+/* 底部版权链接样式 */
+.banquan1 a{
+	display:block; /* 设置链接为块级元素 */
+}
+
+/* 底部版权信息容器样式 */
+.bottom_min-banquan{
+	background:#333; /* 设置容器背景颜色为深灰色 */
+	height: 182px; /* 设置容器高度 */
+}
+
+/* 底部版权信息内容容器样式 */
+.banquan1_con{
+	width:1248px; /* 设置容器宽度 */
+	margin:0 auto; /* 设置容器水平居中 */
+	padding:20px 0; /* 设置容器内边距 */
+	margin-top:20PX; /* 设置容器顶部外边距 */
+}
+
+/* 底部版权信息链接样式 */
+.banquan1_con a{
+	line-height:25px; /* 设置链接行高 */
+	color:#ddd; /* 设置链接文字颜色为浅灰色 */
+}
+
+/* 底部版权信息标题样式 */
+.banquan1_con .title{
+	font-weight:800; /* 设置标题字体粗细 */
+	font-size:16px; /* 设置标题字体大小 */
+	margin-bottom:10px; /* 设置标题下外边距 */
+}
